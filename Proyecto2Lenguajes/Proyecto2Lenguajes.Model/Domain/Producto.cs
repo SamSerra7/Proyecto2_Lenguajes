@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Proyecto2Lenguajes.Model.Domain
+namespace Proyecto2.Model.Domain
 {
     /// <summary>
     /// Clase que administra los productos
