@@ -1,0 +1,9 @@
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\bin\Debug\netstandard2.0\Proyecto2.Model.deps.json
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\bin\Debug\netstandard2.0\Proyecto2.Model.dll
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\bin\Debug\netstandard2.0\Proyecto2.Model.pdb
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\obj\Debug\netstandard2.0\Proyecto2.Model.csprojAssemblyReference.cache
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\obj\Debug\netstandard2.0\Proyecto2.Model.csproj.CoreCompileInputs.cache
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\obj\Debug\netstandard2.0\Proyecto2.Model.AssemblyInfoInputs.cache
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\obj\Debug\netstandard2.0\Proyecto2.Model.AssemblyInfo.cs
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\obj\Debug\netstandard2.0\Proyecto2.Model.dll
+C:\Users\Samuel\Documents\GitHub\Proyecto2_Lenguajes\Proyecto2Lenguajes\Proyecto2Lenguajes.Model\obj\Debug\netstandard2.0\Proyecto2.Model.pdb

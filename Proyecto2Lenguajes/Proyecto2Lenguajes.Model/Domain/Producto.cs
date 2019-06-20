@@ -27,8 +27,8 @@ namespace Proyecto2.Model.Domain
             }
         }
 
-        private double porcentajeImpuesto;
-        public double PorcentajeImpuesto
+        private decimal porcentajeImpuesto;
+        public decimal PorcentajeImpuesto
         {
             get { return porcentajeImpuesto; }
             set {
