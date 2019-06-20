@@ -6,6 +6,27 @@ using System.Text;
 namespace Proyecto2.Model.Domain
 {
     /// <summary>
+    /// Clase que gestiona un conjunto de productos
+    /// </summary>
+    public class Productos {
+        private List<Producto> productos = new List<Producto>();
+
+        public IEnumerator<Producto> GetProductos()
+        {
+            return productos.GetEnumerator();
+        }
+       
+        public void AddProductos(Producto producto)
+        {
+            productos.Add(producto);
+        }
+
+
+    }
+
+
+
+    /// <summary>
     /// Clase que administra los productos
     /// </summary>
     public class Producto

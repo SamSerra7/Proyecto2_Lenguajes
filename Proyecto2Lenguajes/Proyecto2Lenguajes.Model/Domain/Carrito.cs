@@ -29,11 +29,10 @@ namespace Proyecto2.Model.Domain
 
 
         private Usuario usuario;
-
         public Usuario Usuario
         {
             get { return usuario; }
-            set { usuario = value; }
+            set { usuario = value ?? throw new CompanniaException("El usuario debe existir"); }
         }
 
 
