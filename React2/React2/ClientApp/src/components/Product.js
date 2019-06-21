@@ -18,7 +18,7 @@ export class Product extends Component {
                 <Grid>
                     <Row>
                         <Col sm={4}>
-                            <img src="https://pictures.dealer.com/t/twowheelmotorsportguelphtc/0354/1447ce5c0fe8b9e07bb124be064018d2x.jpg?impolicy=resize&w=240"></img>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJVc6wVmlXRrgOh-DqYK26-Nx-UK9bv403NCmdjPUXo9AM6bL"></img>
 
                         </Col>
                     </Row>
