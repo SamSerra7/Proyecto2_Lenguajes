@@ -1,4 +1,5 @@
 ﻿using Proyecto2Lenguajes.Model.Exceptions;
+using System;
 using System.Collections.Generic;
 
 namespace Proyecto2.Model.Domain
@@ -20,8 +21,8 @@ namespace Proyecto2.Model.Domain
 
 
 
-        private List<Producto> productos;
-        public List<Producto> Productos
+        private Productos productos;
+        public Productos Productos
         {
             get { return productos; }
             set { productos = value ?? throw new CompanniaException("Los productos no pueden estar vacios"); }
@@ -38,6 +39,20 @@ namespace Proyecto2.Model.Domain
 
 
 
+        /// <summary>
+        /// Método que asigna un producto y una cantidad al carrito
+        /// </summary>
+        public void Asignar(Producto producto,int cantidad)
+        {
+            if (validarAsignar(producto, cantidad))
+            {
+                
+            }
+        }
 
+        private bool validarAsignar(Producto producto, int cantidad)
+        {
+            return true;//hacer logica
+        }
     }
 }
