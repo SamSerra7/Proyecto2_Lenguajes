@@ -36,8 +36,17 @@ namespace Proyecto2.Model.Domain
         {
 
         }
-
-
+        /*Maes agregue este atributo, creo que es importante tenerlo*/
+        private float precioUnitario;
+        public float PrecioUnitario
+        {
+            get { return precioUnitario; }
+            set
+            {
+                if (value < 0 || value == 0) throw new CompanniaException("El id debe ser mayor y distinto de cero");
+                precioUnitario = value;
+            }
+        }
         private int idProducto;
         public int IdProducto
         {

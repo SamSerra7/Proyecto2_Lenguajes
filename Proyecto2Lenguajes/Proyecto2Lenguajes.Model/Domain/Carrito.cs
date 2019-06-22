@@ -7,7 +7,7 @@ namespace Proyecto2.Model.Domain
     /// <summary>
     /// Clase que admnistra carrito
     /// </summary>
-    public class Carrito
+    public abstract class Carrito
     {
 
         private string id;
@@ -18,41 +18,57 @@ namespace Proyecto2.Model.Domain
                 if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value)) throw new CompanniaException("El id no puede estar vacío");
                 id = value; }
         }
-
-
-
-        private Productos productos;
-        public Productos Productos
-        {
-            get { return productos; }
-            set { productos = value ?? throw new CompanniaException("Los productos no pueden estar vacios"); }
-        }
-
-
         private Usuario usuario;
         public Usuario Usuario
         {
             get { return usuario; }
             set { usuario = value ?? throw new CompanniaException("El usuario debe existir"); }
         }
-
-
-
-
-        /// <summary>
-        /// Método que asigna un producto y una cantidad al carrito
-        /// </summary>
-        public void Asignar(Producto producto,int cantidad)
+        private decimal subtotal;
+        public decimal Subtotal
         {
-            if (validarAsignar(producto, cantidad))
-            {
-                
+            get { return subtotal; }
+            set {
+                if(value < 0) throw new CompanniaException("El subtotal debe ser un numero positivo");
+                subtotal = value;
             }
         }
-
-        private bool validarAsignar(Producto producto, int cantidad)
+        private int total;
+        public int Total
         {
-            return true;//hacer logica
+            get { return total; }
+            set {
+                if (value < 0) throw new CompanniaException("El total debe ser un numero positivo");
+                total = value;
+            }
+        }
+        /*
+         * Proponer solo dejar la lista de productosCantidad, 
+         * no veo eficiente tener la misma lista de productos dos veces 
+         * una con cantidad y otra sin cantidad
+        private Productos productos;
+        public Productos Productos
+        {
+            get { return productos; }
+            set { productos = value ?? throw new CompanniaException("Los productos no pueden estar vacios"); }
+        }*/
+        private List<ProductoCantidad> productoCantidad;
+        public List<ProductoCantidad> ProductoCantidad
+        {
+            get { return productoCantidad; }
+            set
+            {
+                productoCantidad = value ?? throw new CompanniaException("Los productos cantidad no pueden estar vacios");
+            }
+        }
+        public Carrito() { }
+        public Carrito(string id, Usuario usuario, decimal subtotal, int total, List<ProductoCantidad> productoCantidad)
+        {
+            Id = id;
+            Usuario = usuario;
+            Subtotal = subtotal;
+            Total = total;
+            ProductoCantidad = productoCantidad;
         }
     }
 }

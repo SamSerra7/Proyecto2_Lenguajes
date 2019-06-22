@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Proyecto2.Model.Domain
 {
-    public class ProductoCantidad
+    public abstract class ProductoCantidad
     {
         private Producto producto;
 
@@ -25,5 +25,8 @@ namespace Proyecto2.Model.Domain
             }
         }
 
+        public ProductoCantidad()
+        {
+        }
     }
 }
