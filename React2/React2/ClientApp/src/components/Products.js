@@ -52,4 +52,4 @@ constructor(props) {
 
 export default connect(
    
-)(Products);
+)(products);
